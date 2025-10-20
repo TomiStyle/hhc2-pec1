@@ -1,4 +1,15 @@
 @use "../variables";
+@use "../tools/functions";
+
+// Importamos los componentes
+@use "../components/site-header";
+@use "../components/section";
+@use "../components/button";
+@use "../components/card-place";
+@use "../components/gastronomy-item";
+@use "../components/icon-list";
+@use "../components/resource-list";
+@use "../components/map";
 
 * {
   box-sizing: border-box;
@@ -13,7 +24,8 @@ body {
   font-family: variables.$font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: variables.$uoc-corporate;
+  // color: variables.$uoc-corporate;
+  color: variables.$color-ink; //Damos un color del texto más acorde a la estética de la web
   background-color: variables.$uoc-bg;
 }
 
@@ -46,6 +58,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: variables.$uoc-corporate;
+
+  // Aplicar la sombra usando la función
+  text-shadow: functions.subtle-shadow(
+    variables.$color-gris-oscuro-sombra,
+    2px,
+    2px,
+    4px
+  );
 
   @media (min-width: variables.$mqMinWidth) {
     font-size: 36px;

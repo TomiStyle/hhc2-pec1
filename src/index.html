@@ -1,27 +1,198 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Córdoba - Sultana y mora</title>
+</head>
+
+<body>
+  <header class="c-site-header">
     <div class="uoc-container">
-      <picture>
+      <!-- <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+      </picture> -->
+      <h1 class="uoc-title">Córdoba: Patrimonio, Luz y Color</h1>
+      <p class="c-site-header__tagline">Un viaje a la capital del Al-Andalus</p>
+      <a href="#main-content" class="c-button c-button--primary">Explora Córdoba</a>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </header>
+
+  <main id="main-content">
+    <section class="c-section c-section--intro">
+      <div class="uoc-container">
+        <h2 class="c-section__title">Descubre la magia de Córdoba</h2>
+        <p class="c-section__text">
+          Córdoba, una joya de Andalucía, te invita a realizar un viaje a través de su historia y su vibrante cultura.
+          Pasea por sus calles estrechas como si retrocedieras 6 siglos, admira sus patios floridos y déjate seducir por
+          su gastronomía.
+          Una ciudad donde el pasado romano, visigodo, musulmán, judío y cristiano conviven como uno.
+        </p>
+        <picture>
+          <source srcset="./assets/images/cordoba_panoramica.webp" type="image/webp" />
+          <img src="./assets/images/cordoba_panoramica.webp" alt="Panorámica de córdoba" class="c-section__image" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="c-section c-section--highlights">
+      <div class="uoc-container">
+        <h2 class="c-section__title">Imprescindibles de Córdoba</h2>
+        <div class="c-grid c-grid--3-cols">
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/mezquita.webp" type="image/webp" />
+              <img src="./assets/images/mezquita.webp" alt="Mezquita-Catedral de Córdoba" class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">Mezquita-Catedral</h3>
+            <p class="c-card-place__description">Un monumento único que fusiona la arquitectura islámica y cristiana.
+            </p>
+            <a href="https://mezquita-catedraldecordoba.es/" class="c-button c-button--secondary">Ver más</a>
+          </article>
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/alcazar.webp" type="image/webp" />
+              <img src="./assets/images/alcazar.webp" alt="Alcázar de los Reyes Cristianos"
+                class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">Alcázar de los Reyes Cristianos</h3>
+            <p class="c-card-place__description">Jardines espectaculares y una historia fascinante.</p>
+            <a href="https://alcazardecordoba.es/" class="c-button c-button--secondary">Ver más</a>
+          </article>
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/juderia.webp" type="image/webp" />
+              <img src="./assets/images/juderia.webp" alt="Judería de Córdoba" class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">La Judería</h3>
+            <p class="c-card-place__description">Laberinto de calles con encanto, sinagoga y patios.</p>
+            <a href="https://www.turismodecordoba.org/la-juderia-de-cordoba" class="c-button c-button--secondary">Ver
+              más</a>
+          </article>
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/patios.webp" type="image/webp" />
+              <img src="./assets/images/patios.webp" alt="Patios de Córdoba" class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">Patios de Córdoba</h3>
+            <p class="c-card-place__description">Explosión de flores y tradición en mayo.</p>
+            <a href="https://www.turismodecordoba.org/visitar-patios-de-cordoba"
+              class="c-button c-button--secondary">Ver más</a>
+          </article>
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/medina.webp" type="image/webp" />
+              <img src="./assets/images/medina.webp" alt="Medina Azahara" class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">Medina Azahara</h3>
+            <p class="c-card-place__description">La antigua ciudad califal, a las afueras de Córdoba.</p>
+            <a href="https://www.medinaazahara.org/" class="c-button c-button--secondary">Ver más</a>
+          </article>
+          <article class="c-card-place">
+            <picture>
+              <source srcset="./assets/images/puenteRomano.webp" type="image/webp" />
+              <img src="./assets/images/puenteRomano.webp" alt="Puente Romano de Córdoba" class="c-card-place__image" />
+            </picture>
+            <h3 class="c-card-place__title">Puente Romano</h3>
+            <p class="c-card-place__description">Un icono de la ciudad con vistas al río Guadalquivir.</p>
+            <a href="https://www.turismodecordoba.org/puente-romano" class="c-button c-button--secondary">Ver más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-section c-section--gastronomy">
+      <div class="uoc-container">
+        <h2 class="c-section__title">Gastronomía Cordobesa</h2>
+        <div class="c-gastronomy-item">
+          <picture>
+            <source srcset="./assets/images/salmorejo.webp" type="image/webp" />
+            <img src="./assets/images/salmorejo.webp" alt="Salmorejo cordobés" class="c-gastronomy-item__image" />
+          </picture>
+          <div class="c-gastronomy-item__content">
+            <h3 class="c-gastronomy-item__title">Salmorejo</h3>
+            <p class="c-gastronomy-item__description">Crema fría de tomate, pan, ajo, aceite y vinagre, coronada con
+              jamón y huevo duro.</p>
+          </div>
+        </div>
+        <div class="c-gastronomy-item">
+          <picture>
+            <source srcset="./assets/images/flamenquin.webp" type="image/webp" />
+            <img src="./assets/images/flamenquin.webp" alt="Flamenquín cordobés" class="c-gastronomy-item__image" />
+          </picture>
+          <div class="c-gastronomy-item__content">
+            <h3 class="c-gastronomy-item__title">Flamenquín</h3>
+            <p class="c-gastronomy-item__description">Rollitos de jamón serrano y lomo de cerdo empanados y fritos.</p>
+          </div>
+        </div>
+        <div class="c-gastronomy-item">
+          <picture>
+            <source srcset="./assets/images/raboToro.webp" type="image/webp" />
+            <img src="./assets/images/raboToro.webp" alt="Rabo de toro a la cordobesa"
+              class="c-gastronomy-item__image" />
+          </picture>
+          <div class="c-gastronomy-item__content">
+            <h3 class="c-gastronomy-item__title">Rabo de Toro</h3>
+            <p class="c-gastronomy-item__description">Estofado tradicional de rabo de toro, tierno y sabroso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-section c-section--tips">
+      <div class="uoc-container">
+        <h2 class="c-section__title">Consejos para tu visita</h2>
+        <p class="c-section__text">
+          La mejor época para visitar Córdoba es en primavera, especialmente en mayo, cuando se celebra la famosa Fiesta
+          de los Patios.
+          El clima en verano es muy caluroso, así que planifica tus visitas a primera hora de la mañana o al atardecer.
+          La ciudad es muy caminable, pero también cuenta con transporte público eficiente.
+        </p>
+        <div class="c-icon-list">
+          <div class="c-icon-list__item">
+            <i class="fa-solid fa-calendar-days c-icon-list__icon"></i>
+            <span class="c-icon-list__text">Mejor en primavera (mayo)</span>
+          </div>
+          <div class="c-icon-list__item">
+            <i class="fa-solid fa-temperature-high c-icon-list__icon"></i>
+            <span class="c-icon-list__text">Veranos calurosos</span>
+          </div>
+          <div class="c-icon-list__item">
+            <i class="fa-solid fa-walking c-icon-list__icon"></i>
+            <span class="c-icon-list__text">Explora a pie</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-section c-section--resources">
+      <div class="uoc-container">
+        <h2 class="c-section__title">Recursos útiles</h2>
+        <ul class="c-resource-list">
+          <li class="c-resource-list__item"><a href="https://www.turismodecordoba.org/" target="_blank"
+              class="c-resource-list__link"><i class="fa-solid fa-globe"></i> Turismo de Córdoba</a></li>
+          <li class="c-resource-list__item"><a href="https://www.cordoba.es/" target="_blank"
+              class="c-resource-list__link"><i class="fa-solid fa-city"></i> Ayuntamiento de Córdoba</a></li>
+          <li class="c-resource-list__item"><a href="https://es.wikipedia.org/wiki/Córdoba_(España)" target="_blank"
+              class="c-resource-list__link"><i class="fa-solid fa-book"></i> Wikipedia</a></li>
+        </ul>
+        <div class="c-map">
+          <iframe
+            src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=mezquita cordoba&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

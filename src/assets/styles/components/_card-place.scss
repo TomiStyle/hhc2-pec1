@@ -1,0 +1,43 @@
+@use "../variables";
+
+.c-card-place {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+
+  // Efecto cuando pasamos el ratón por encima
+  &:hover {
+    transform: translateY(-5px);
+    background-color: variables.$color-gris-claro;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px; // Altura fija para las imágenes de las tarjetas
+    object-fit: cover; // Aseguramos que la imagen cubra el espacio sin distorsionarse
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    margin: 1rem 1rem 0.5rem;
+    color: variables.$color-ink;
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    color: rgba(variables.$color-ink, 0.7);
+    padding: 0 1rem;
+    flex-grow: 1; // Para que ocupe el espacio restante
+  }
+
+  .c-button--secondary {
+    margin: 1rem;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../variables";
+
+.c-resource-list {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    color: variables.$color-ink;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$color-rojo-teja;
+    }
+
+    .fa-solid {
+      font-size: 1.1em;
+    }
+  }
+}

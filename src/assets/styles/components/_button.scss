@@ -1,0 +1,42 @@
+@use "../variables";
+@use "sass:color";
+
+.c-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+
+  &--primary {
+    background-color: variables.$color-rojo-teja;
+    color: variables.$color-crema;
+
+    &:hover {
+      background-color: color.adjust(
+        variables.$color-rojo-teja,
+        $lightness: -10%
+      );
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: variables.$color-rojo-teja;
+    border-color: variables.$color-rojo-teja;
+
+    &:hover {
+      background-color: variables.$color-rojo-teja;
+      color: variables.$color-crema;
+    }
+  }
+}

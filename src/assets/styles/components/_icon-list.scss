@@ -1,0 +1,29 @@
+@use "../variables";
+
+.c-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: variables.$color-ink;
+    font-size: 1.1rem;
+    max-width: 150px;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: variables.$color-rojo-teja;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+}

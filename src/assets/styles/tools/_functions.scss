@@ -1,0 +1,6 @@
+@use "sass:color";
+
+// Función para sombra de texto
+@function subtle-shadow($color, $x: 1px, $y: 1px, $blur: 2px) {
+  @return $x $y $blur $color;
+}

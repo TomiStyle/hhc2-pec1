@@ -1,0 +1,29 @@
+@use "../variables";
+@use "../tools/functions"; // Para la sombra del título
+
+.c-site-header {
+  background-color: variables.$color-piedra; // Color de fondo para el header
+  color: variables.$color-piedra; // Color de texto para el header
+  padding: 4rem 0;
+  text-align: center;
+
+  .uoc-title {
+    // Reutilizamos la clase uoc-title para el h1
+    color: variables.$color-piedra; // Cambiamos el color del título para el header
+    // Sombra oscura
+    text-shadow: functions.subtle-shadow(
+      rgba(variables.$color-ink, 0.3),
+      2px,
+      2px,
+      4px
+    );
+    margin-bottom: 0.5rem;
+  }
+
+  &__tagline {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-family: variables.$font-family-serif;
+  }
+}
