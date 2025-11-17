@@ -10,25 +10,25 @@
   }
 
   &__title {
-    text-align: center;
     margin-bottom: 2rem;
     color: variables.$color-rojo-teja; // Color de título para secciones
+    text-align: center;
   }
 
   &__text {
     max-width: 700px;
-    margin-left: auto;
     margin-right: auto;
-    text-align: justify;
     margin-bottom: 2rem;
+    margin-left: auto;
+    text-align: justify;
   }
 
   &__image {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }

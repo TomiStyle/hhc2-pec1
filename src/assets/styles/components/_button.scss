@@ -4,22 +4,22 @@
 .c-button {
   display: inline-block;
   padding: 0.8rem 1.8rem;
-  border-radius: 50px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: 2px solid transparent;
   text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    opacity: 0.9;
     text-decoration: underline;
+    opacity: 0.9;
   }
 
   &--primary {
-    background-color: variables.$color-rojo-teja;
     color: variables.$color-crema;
+    background-color: variables.$color-rojo-teja;
 
     &:hover {
       background-color: color.adjust(
@@ -30,13 +30,13 @@
   }
 
   &--secondary {
-    background-color: transparent;
     color: variables.$color-rojo-teja;
+    background-color: transparent;
     border-color: variables.$color-rojo-teja;
 
     &:hover {
-      background-color: variables.$color-rojo-teja;
       color: variables.$color-crema;
+      background-color: variables.$color-rojo-teja;
     }
   }
 }

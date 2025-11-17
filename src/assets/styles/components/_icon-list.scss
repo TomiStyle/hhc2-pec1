@@ -3,24 +3,24 @@
 .c-icon-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
   margin-top: 2rem;
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: variables.$color-ink;
-    font-size: 1.1rem;
     max-width: 150px;
+    font-size: 1.1rem;
+    color: variables.$color-ink;
+    text-align: center;
   }
 
   &__icon {
+    margin-bottom: 0.5rem;
     font-size: 3rem;
     color: variables.$color-rojo-teja;
-    margin-bottom: 0.5rem;
   }
 
   &__text {

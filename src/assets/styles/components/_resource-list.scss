@@ -10,11 +10,11 @@
   }
 
   &__link {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
     font-size: 1.2rem;
     color: variables.$color-ink;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
     transition: color 0.3s ease;
 
     &:hover {
